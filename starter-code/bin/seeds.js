@@ -54,11 +54,3 @@ const movies = [
     plot: 'Don´t mess with my dog and car'
   }
 ]
-
-Movie.create(movies, err => {
-  if (err) {
-    throw err
-  }
-  console.log(`${movies.length} "movies" created`)
-  mongoose.connection.close()
-})
